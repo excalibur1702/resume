@@ -1,0 +1,157 @@
+html{
+    background-color: #777;
+    font-family: "Trebuchet MS", sans-serif;
+}
+body{
+    margin: 0;
+    width: 210mm;
+    height: 297mm;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    display: grid;
+    grid-template-columns: 80mm 1fr;
+    grid-template-rows: auto 1fr;
+    grid-gap: 10mm 5mm;
+    padding: 10mm;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+i{
+    margin-right: 2mm;
+    color: #6840b0;
+}
+ul{
+    list-style-type: none;
+}
+header{
+    grid-area: 1/1/2/3;
+    padding: 5mm 15mm 0 5mm;
+}
+header * {
+    display: inline-block;
+}
+img{
+    height: 50mm;
+    width: 50mm;
+    float: right;
+    border-radius: 25mm;
+}
+#name{
+    font-size: 19mm;
+    margin: 0;
+    color: #6840b0;
+}
+#subtitle{
+    font-size: 7.5mm;
+    margin: 0;
+}
+.contact{
+    margin-right: 4.5mm;
+    font-size: 3.5mm;
+}
+.section-heading{
+    font-size: 7.5mm;
+    margin-bottom: 0;
+    grid-area: 1/1/2/3;
+    color: #6840b0;
+}
+.heading-line{
+    border: none;
+    border-top: solid 0.5mm #6840b0;
+    grid-area: 2/1/3/3;
+    width: 100%;
+}
+.edu-title, .ach-title{
+    font-size: 5mm;
+    margin-bottom: 1mm;
+}
+.institute, .loc-date{
+    font-size: 4mm;
+    margin: 0;
+}
+.date, .location{
+    font-size: 3mm;
+    display: inline-block;
+}
+.date{
+    width: 50%;
+}
+.description{
+    font-size: 3.5mm;
+    margin-top: 0;
+    grid-area: 3/1/4/3;
+}
+.link{
+    font-size: 3.5mm;
+    margin-bottom: 7mm;
+}
+.link a{
+    display: block;
+    word-wrap: break-word;
+}
+.divider{
+    border: none;
+    border-top: dashed 0.1mm #6840b0;
+    opacity: 50%;
+}
+.achievement {
+
+}
+.loc-date{
+    margin-bottom: 2mm;
+}
+#skills{
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    grid-gap: 0mm 5mm;
+    font-size: 3.5mm;
+}
+.skillset{
+    margin: 2mm 0;
+    font-weight: bold;
+}
+.skill-list{
+    margin: 2mm 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#languages{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 4fr;
+    grid-gap: 0mm 5mm;
+    font-size: 3.5mm;
+}
+#languages .section-heading{
+    grid-area: 1/1/2/5;
+}
+#languages .heading-line{
+    grid-area: 2/1/3/5;
+}
+.lang{
+    margin: 1mm 0;
+    font-weight: bold;
+}
+.lang-level{
+    margin: 1mm 0;
+}
+#hobby-list{
+    padding: 0 6mm;
+    list-style-type: inherit;
+    font-size: 3.5mm;
+}
+body:after{
+    content: "Arya Tathe | Résumé";
+    display: block;
+    position: relative;
+    bottom: 2mm;
+    height: auto;
+    width: 190mm;
+    font-size: 3mm;
+    text-align: center;
+}

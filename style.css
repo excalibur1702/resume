@@ -67,6 +67,7 @@ img{
     width: 100%;
 }
 .edu-title, .ach-title{
+    font-weight: bold;
     font-size: 5mm;
     margin-bottom: 1mm;
 }
